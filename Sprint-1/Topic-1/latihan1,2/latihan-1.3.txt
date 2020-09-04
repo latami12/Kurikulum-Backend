@@ -1,0 +1,2 @@
+perintah which php menampilkan direktori php yang telah dikerjakan dengan output /usr/bin/php
+/usr/bin/php adalah direktori php untuk di gunakan di terminal
