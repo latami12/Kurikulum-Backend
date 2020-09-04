@@ -1,0 +1,17 @@
+Membuat Contoh Pseudo-Code Minimal 7 step
+
+<variabel> = <nilai>
+jika <kondisi>
+     lakukan sesuatu
+lain
+     lakukan yang lain
+ketika <kondisi>
+     lakukan sesuatu
+untuk <variabel> dari <awal> ke <akhir> dengan <langkah>
+     lakukan dengan variabel
+fungsi <nama_fungsi> (<argumen>)
+     lakukan sesuatu dengan argumen
+     hasilkan sesuatu
+<variabel> = <nama_fungsi>(<argumen>) //Pemanggilan fungsi
+Atau
+<nama_fungsi>(<argumen) //Pemanggiln fungsi
