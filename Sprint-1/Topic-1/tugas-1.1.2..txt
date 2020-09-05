@@ -1,0 +1,33 @@
+CARA MENGOPERASIKAN MICROSOFT WORD
+
+SET jumlah barang
+SET stok barang
+SET harga barang
+
+JIKA jumlah barang > stok barang
+    Tampilkan stok tidak tersedia     
+AKHIR-JIKA
+
+KETIKA jumlah barang < stok barang
+    Tampilkan stok tersedia
+AKHIR-KETIKA
+
+jika jumlah barang yang dibeli > 1 
+   maka total harga = jumlah barang x harga barang
+AKHIR-JIKA
+
+JIKA pembeli membeli beberapa barang 
+   Maka total harga = jumlah dari setiap barang tsb
+AKIHR-JIKA   
+
+Jika total harga < uang pembeli
+    Maka tampilkan uang kembalian
+AKIHR-JIKA     
+
+Jika uang pwmbwli < total harga
+    Maka tampilkan pengurangan barang
+ AKIHR-JIKA    
+
+ Untuk cek stok barang 
+    Cari di pencarian barang    
+  Tampilkan stok barang digudang       
