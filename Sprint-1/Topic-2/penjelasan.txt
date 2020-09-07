@@ -1,0 +1,40 @@
+PENJELASAN :
+
+1. var_dump 
+adalah untuk mengecek variabel dan isinya
+
+2. var_dump($d + $e);
+adalah jika variabel d ditambah variabel e maka hasil nya adalah integer (5).
+setiap pertambahan, pengurangan, pembagian, perkalian antara integer dan string maka hasilnya integer.
+
+3. var_dump($e == Sf);
+adalah jika variabel e sama dengan variabel f maka hasil booleannya true.
+
+4. var_dump($e === $f);
+adalah jka variabel e identik dengan variabel f maka hasil booleannya false,
+dua variabel ini sama - sama identik di nilai tapi beda di tipenya saja.
+
+5. var_dump($g);
+adalah hasil dari variabel g : null.
+
+6. var_dump((bool)$g);
+adalah hasil variabel g adalah nol maka boolean nya adalah false,
+karna null termasuk juga false.
+
+7. var_dump((int)$g);
+adalah hasil integer variabel g adalah null, karna nol tidak termasuk desimal atau float.
+
+8. var_dump(true && false);
+adalah jika ingin memakai operator && maka harus ada 2 atau lebih komponen yang sama,
+karena operator && sama dengan =, oleh karena itu hasil di atas adalah false, karena komponennya yang tidak sama.
+
+9. var_dump(true || false);
+adalah jika operator bertanda || maka dilihat dari 2 function yang mana sudah terpenuhi,
+maka hasil yang terpilih adalah true karna true lah yang terpenuhi syaratnya, 
+sedangkan false yang belum terpenuhi syaratnya.
+
+10. var_dump(false || false);
+adalah jika sama - sama false maka hasilnya false karna tidak ada salah satu dari 2 function yang terpenuhi.
+
+11. var_dump(!false);
+adalah lawan kata tidak benar adalah true, maka hasilnya true.
