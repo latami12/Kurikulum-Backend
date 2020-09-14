@@ -84,6 +84,8 @@ echo 'Santri paling muda : ';
 array_multisort($semua, SORT_ASC, $students;
 $min = min($semua); 
 
-foreach ($value as $students) {
-    # code...
+foreach ($students as $value) {
+    if ($value['usia']== $min) {
+        echo '$value'
+    }
 }
