@@ -17,19 +17,19 @@ function keliling($width, $length) {
 }
 
 if ($pilihan == 1) {
-    echo "Panjang : ";
-    $panjang = (int) trim(fgets(STDIN));
-    echo "Lebar : ";
-    $lebar = (int) trim(fgets(STDIN));
-    echo '----------------------------'."\n";
-    echo "Luas : ".calcRectangleArea($panjang, $lebar)."\n";
-} else if ($pilihan == 2) {
-    echo "Panjang : ";
-    $panjang = (int) trim(fgets(STDIN));
-    echo "Lebar : ";
-    $lebar = (int) trim(fgets(STDIN));
-    echo '----------------------------'."\n";
-    echo "Keliling : ".keliling($panjang, $lebar)."\n";
-} else {
-    echo "Pilihan tidak ditemukan ! \n";
-}
+        echo "Panjang : ";
+        $panjang = (int) trim(fgets(STDIN));
+        echo "Lebar : ";
+        $lebar = (int) trim(fgets(STDIN));
+        echo '----------------------------'."\n";
+        echo "Luas : ".calcRectangleArea($panjang, $lebar)."\n";
+    } else if ($pilihan == 2) {
+        echo "Panjang : ";
+        $panjang = (int) trim(fgets(STDIN));
+        echo "Lebar : ";
+        $lebar = (int) trim(fgets(STDIN));
+        echo '----------------------------'."\n";
+        echo "Keliling : ".keliling($panjang, $lebar)."\n";
+    } else {
+        echo "Pilihan tidak ditemukan ! \n";
+    }

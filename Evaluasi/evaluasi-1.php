@@ -42,7 +42,7 @@ echo '=============';
 echo '===WELCOME===';
 echo '=============';
 
-echo 'Data yang ingin di inuput :';
+echo 'Data yang ingin di input :';
 $data = trim(fgets(STDIN));
 
 for ($i=0; $i < $students; $i++) { 
