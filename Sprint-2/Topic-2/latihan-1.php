@@ -1,6 +1,13 @@
 <?php
 
 class Rumus {
+    public function __construct()
+    {
+        echo "===========";
+        echo "|  Tugas  |";
+        echo "===========";
+        echo "\n";
+    }
     public static function persegiPanjang($p, $l, $r){
         if ($r == "Luas") {
             return $p*$l;
@@ -33,10 +40,7 @@ class Rumus {
 }
 
 function Menghitung(){
-    echo "===========";
-    echo "|  Tugas  |";
-    echo "===========";
-    echo "\n";
+    
 
     echo "1. Persegi Panjang \n2. Lingkaran \n3. Trapesium \n";
     echo "Pilih lah : ";

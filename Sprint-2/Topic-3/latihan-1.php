@@ -1,6 +1,17 @@
 <?php
 
 class Rumus {
+    public function __construct()
+    {
+        echo "===========";
+        echo "|  Tugas  |";
+        echo "===========";
+        echo "\n";
+
+        echo "1. Persegi Panjang \n2. Lingkaran \n3. Trapesium \n";
+        echo "Pilih lah : ";
+    }
+   
     public static function persegiPanjang($p, $l, $r){
         if ($p < 0 || $l < 0) {
             throw new Exception('Tidak bisa memasukkan bilangan negatif');
@@ -42,13 +53,7 @@ class Rumus {
 }
 
 function Menghitung(){
-    echo "===========";
-    echo "|  Tugas  |";
-    echo "===========";
-    echo "\n";
-
-    echo "1. Persegi Panjang \n2. Lingkaran \n3. Trapesium \n";
-    echo "Pilih lah : ";
+    
     $hasil = (int) trim(fgets(STDIN));
 
     if ($hasil == 1) {
@@ -57,7 +62,7 @@ function Menghitung(){
         $l = (int) trim(fgets(STDIN));
         echo "Panjang : ";
         $p = (int) trim(fgets(STDIN));
-        echo "---------------------- \n";
+        echo "############### \n";
         echo "1. Diameter \n2. Luas \n";
         echo "Mau apa? \n";
         $rumus = (int) trim(fgets(STDIN));
@@ -73,7 +78,7 @@ function Menghitung(){
         try {
             echo $rumus . " : " . Rumus::persegiPanjang($p, $l, $rumus);
         } catch (Exception $ex) {
-            echo "Error pada " . $ex->getFile() . " baris ke " . $ex->getLine() ."\n";
+            echo "Error pada " . __FILE__ . " baris ke " . $ex->getLine() ."\n";
             echo $ex->getMessage();
         }
         echo "\n";
@@ -82,7 +87,7 @@ function Menghitung(){
         echo "Lingkaran \n";
         echo "Jari-jari : ";
         $r = (int) trim(fgets(STDIN));
-        echo "---------------------- \n";
+        echo "############### \n";
         echo "1. Diameter \n2. Luas \n";
         echo "Mau apa? \n";
         $rumus = (int) trim(fgets(STDIN));
@@ -97,7 +102,7 @@ function Menghitung(){
         try {
             echo $rumus . " : " . Rumus::lingkaran($r, $rumus);
         } catch (Exception $ex) {
-            echo "Error pada " . $ex->getFile() . " baris ke " . $ex->getLine() ."\n";
+            echo "Error pada " . __FILE__ . " baris ke " . $ex->getLine() ."\n";
             echo $ex->getMessage();
         }
         echo "\n";
@@ -113,7 +118,7 @@ function Menghitung(){
         $skr = (int) trim(fgets(STDIN));
         echo "Tinggi";
         $t = (int) trim(fgets(STDIN));
-        echo "---------------------- \n";
+        echo "############### \n";
         echo "1. Keliling \n2. Luas \n";
         echo "Mau apa? \n";
         $rumus = (int) trim(fgets(STDIN));
@@ -128,7 +133,7 @@ function Menghitung(){
         try {
             echo $rumus . " : " . Rumus::trapesium($s1, $s2, $skn, $skr, $t, $rumus);
         } catch (Exception $ex) {
-            echo "Error pada " . $ex->getFile() . " baris ke " . $ex->getLine() ."\n";
+            echo "Error pada " . __FILE__ . " baris ke " . $ex->getLine() ."\n";
             echo $ex->getMessage();
         }
         echo "\n";
