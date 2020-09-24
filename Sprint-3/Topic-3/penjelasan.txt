@@ -1,0 +1,6 @@
+First Normal From (1NF)
+ialah jika di setiap atribut pada suatu data hanya memiliki nilai tunggal dalam satu baris di setiap baris yang ada di data tersebut.
+Second Normal From (2NF)
+ialah memisahkan primary key dengan primary key lainnya dan membuat masing - masing primary key table sendiri - sendiri.
+Third Normal From (3NF)
+ialah membuat table baru untuk atribut yang tidak bergantung pada primary ke
