@@ -65,12 +65,32 @@ class connectpdo
         $result = $show->fetchAll(pdo::FETCH_ASSOC);
         print_r($result);
     }
+
+    public function update()
+    {
+        $query = "UPDATE input SET nama = andi WHERE id = ?";
+        $show = $this->connect->prepare($query);
+        $id = (int) trim(fgets(STDIN));
+        $show -> execute([$id]);//buat isi yg $query nya        
+        $result = $show->fetchAll(pdo::FETCH_ASSOC);
+        print_r($result);
+    }
+
+    public function delete()
+    {
+        $query = "DELETE input WHERE id = ?";
+        $show = $this->connect->prepare($query);
+        $id = (int) trim(fgets(STDIN));
+        $show -> execute($id);//buat isi yg $query nya        
+        $result = $show->fetchAll(pdo::FETCH_ASSOC);
+        print_r($result);
+    }
 }
 
 function pilih() {
     $conn = new connectpdo();
 
-    echo "1. Create \n2. Read \n3. Count \n4. Avg \n5. Max \n6. min\n";
+    echo "1. Create \n2. Read \n3. Count \n4. Avg \n5. Max \n6. Update \n7. Delete \n8. Min \n";
     echo "Mau Ngapain ? ";
     $pilih = (int) trim(fgets(STDIN));
 
@@ -108,6 +128,16 @@ function pilih() {
         echo "      Max       \n";
         echo "--------------- \n";
         $conn->max();
+    } else if ($pilih == 6) {
+        echo "------------------ \n";
+        echo "      Update       \n";
+        echo "------------------ \n";
+        $conn->update();
+    }else if ($pilih == 7) {
+        echo "------------------ \n";
+        echo "     Delete        \n";
+        echo "------------------ \n";
+        $conn->delete();
     }else {
         echo "--------------- \n";
         echo "      Min       \n";
