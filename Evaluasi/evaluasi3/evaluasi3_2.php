@@ -27,7 +27,8 @@ class connectpdo
         $query = "SELECT * FROM input";
         $show = $this->connect->prepare($query);
         $show -> execute();//buat isi yg $query nya        
-        
+        $result = $show->fetchAll(pdo::FETCH_ASSOC);
+        print_r($result);
     }
 
     public function count()
