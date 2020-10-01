@@ -38,8 +38,8 @@ if (!isset($_COOKIE['user'])) {
      </form>
      <?php 
         if (isset($_GET["logout"])) {
-            setcookie('user', null, -1, "/");
-            header('location: cookie.php');
+            setcookie("user", null, -1, "/");
+            header('location:cookie.php');
         }
      ?>
 </body>
