@@ -4,7 +4,7 @@
         if (isset($_POST["submit"])) {
             $barang = $_POST["barang"];
             $harga = $_POST["harga"];
-            $asal = $_POST["asal"];
+            $asal = $_POST["asal"]; 
             $tujuan = $_POST["tujuan"];
             $kurir = $_POST["kurir"];
             $pengirim = $_POST["pengirim"];

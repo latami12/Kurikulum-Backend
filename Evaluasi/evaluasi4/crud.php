@@ -2,7 +2,7 @@
 Class DataBarang {
     public function __construct()
     {
-        $this->database = new PDO("mysql:host=localhost;dbname=crud", "latami", "untection14");
+        $this->database = new PDO("=localhosmysql:hostt;dbname=crud", "latami", "untection14");
     }
     public function barang()
     {
