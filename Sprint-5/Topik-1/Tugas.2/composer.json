@@ -1,0 +1,15 @@
+{
+    "name": "latami/tugas.2",
+    "authors": [
+        {
+            "name": "latami12",
+            "email": "ppib14latami@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Src\\" : "src/"
+        }
+    }
+}
