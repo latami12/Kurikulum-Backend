@@ -1,0 +1,12 @@
+{
+    "name": "latami/evaluasi5",
+    "authors": [
+        {
+            "name": "latami12",
+            "email": "ppib14latami@gmail.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^7.1"
+    }
+}

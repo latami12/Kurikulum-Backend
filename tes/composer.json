@@ -1,0 +1,17 @@
+{
+    "name": "latami/tes",
+    "authors": [
+        {
+            "name": "latami12",
+            "email": "ppib14latami@gmail.com"
+        }
+    ],
+    "require": {
+        "nesbot/carbon": "^2.41"
+    },
+    "autoload": {
+        "psr-4": {
+            "Src\\" : "src/"
+        }
+    }
+}

@@ -13,4 +13,4 @@ class Persegi{
     public function keliling(){
         return ($this->panjang + $this->lebar) * 2;
     }
-}
+}   
