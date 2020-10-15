@@ -18,9 +18,9 @@ $res = $client->request('POST', 'https://api.pondokprogrammer.com/api/class/qr?c
     'Authorization' => 'bearer ' . $key_value
 ]
 ]);
-// echo $response->getStatusCode()."<br>"; // 200
-// echo $response->getHeaderLine('content-type')."<br>"; // 'application/json; charset=utf8'
-// echo $response->getBody()."<br>"; // '{"id": 1420053, "name": "guzzle", ...}'
+echo $response->getStatusCode()."<br>"; // 200
+echo $response->getHeaderLine('content-type')."<br>"; // 'application/json; charset=utf8'
+echo $response->getBody()."<br>"; // '{"id": 1420053, "name": "guzzle", ...}'
 
 // Send an asynchronous request.
 // $request = new \GuzzleHttp\Psr7\Request('POST', 'https://api.pondokprogrammer.com/api/class/qr?class_id=81');
