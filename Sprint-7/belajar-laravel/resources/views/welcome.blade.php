@@ -86,9 +86,6 @@
                 </div>
 
                 <div class="links">
-                    <a href="https://laravel.com/docs">Docs</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
                     <a href="https://twitter.com/Latami__" target="_blank"><i class="fa fa-twitter"></i></a>
                     <a href="https://www.facebook.com/rahmat.baguslatami" target="_blank"><i class="fa fa-facebook"></i></a>
                     <a href="https://www.instagram.com/latami8" target="_blank"><i class="fa fa-instagram"></i></a>
