@@ -19,6 +19,12 @@ class WelcomeController extends Controller
 
         return view('show.index', compact('show'));
     }
+    public function cate($cate)
+    {
+        $articles = Article::where('category', $cate)->get();
+
+        return view('show.cate', compact('articles'));
+    }
 
 
 }

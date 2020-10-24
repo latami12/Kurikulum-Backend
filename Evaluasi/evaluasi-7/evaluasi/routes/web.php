@@ -7,7 +7,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::resource('artikel', 'ArticleController');
+Route::resource('artikel', 'ArticleController')->middleware('auth');
 // Route::resource('welcome', 'WelcomeController');
 
 //CRUD
@@ -29,3 +29,4 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/', 'WelcomeController@index');
 Route::get('/{slug}', 'WelcomeController@show');
+Route::get('/category/{categpry}', 'WelcomeController@cate');

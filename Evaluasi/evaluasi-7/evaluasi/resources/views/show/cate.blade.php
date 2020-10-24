@@ -91,6 +91,7 @@
                         Category
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+
                         <a class="dropdown-item" href="/category/biografi">Biograph</a>
                         <a class="dropdown-item" href="/category/Bundesliga">Bundesliga</a>
                         <a class="dropdown-item" href="/category/Champions">Champions</a>
