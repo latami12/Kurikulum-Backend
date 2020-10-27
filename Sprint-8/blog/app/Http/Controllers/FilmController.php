@@ -85,7 +85,7 @@ class FilmController extends Controller
         $film = Film::find($id);
 
         if (!$film) {
-            return $this->sendResponse('error', 'gagal diupdate ', NULL, 400);
+            return $this->sendResponse('error', 'ID tidak ditemukan ', NULL, 400);
         }
 
         $film->title = $request->title;
@@ -94,11 +94,15 @@ class FilmController extends Controller
         $film->publisher = $request->publisher;
         $film->year = $request->year;
 
-        $film->save();
+        try {
+            $film->save();
 
         $film = Film::all();
 
         return $this->sendResponse('success', 'berhasil diupdate', $film, 200);
+    } catch (\Throwable $th) {
+        return $this->sendResponse('error', 'gagal diupdate', $film, 500);
+        }
     }
 
 }
